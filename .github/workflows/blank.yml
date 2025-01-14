@@ -41,4 +41,12 @@ jobs:
         run: python phone_pattern.py
 
       - name: Secret Varibale
-        run: echo ${{ secrets.NAMA_LENGKAP }}
+        env:
+          NAMA_LENGKAP: ${{ secrets.NAMA_LENGKAP }}
+        run: echo "$NAMA""
+
+      - name: Install Libbrary
+        run: pip install python-dotenv
+
+      - name: Run Python 
+        run: python rahasia.py

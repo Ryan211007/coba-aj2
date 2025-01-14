@@ -1,11 +1,46 @@
 [
     {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
         "label": "itertools",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "itertools",
         "description": "itertools",
         "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "nama_depan",
+        "kind": 5,
+        "importPath": ".github.workflows.rahasia",
+        "description": ".github.workflows.rahasia",
+        "peekOfCode": "nama_depan = os.getenv(\"VARIABLE_DEPAN\")\nnama_belakang = os.getenv(\"VARIABLE_BELAKANG\")\nprint(\"VARIABLE_DEPAN: \", nama_depan)\nprint(\"VARIABLE_BELAKANG: \", nama_belakang)",
+        "detail": ".github.workflows.rahasia",
+        "documentation": {}
+    },
+    {
+        "label": "nama_belakang",
+        "kind": 5,
+        "importPath": ".github.workflows.rahasia",
+        "description": ".github.workflows.rahasia",
+        "peekOfCode": "nama_belakang = os.getenv(\"VARIABLE_BELAKANG\")\nprint(\"VARIABLE_DEPAN: \", nama_depan)\nprint(\"VARIABLE_BELAKANG: \", nama_belakang)",
+        "detail": ".github.workflows.rahasia",
         "documentation": {}
     },
     {
