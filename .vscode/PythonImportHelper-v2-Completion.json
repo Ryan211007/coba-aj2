@@ -1,0 +1,56 @@
+[
+    {
+        "label": "itertools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "itertools",
+        "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "brute_force_pattern",
+        "kind": 2,
+        "importPath": "phone_pattern",
+        "description": "phone_pattern",
+        "peekOfCode": "def brute_force_pattern(possible_points):  \n    for length in range(4, len(possible_points) + 1):  \n        for pattern in itertools.permutations(possible_points, length):  \n            yield pattern  \npoints = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  \nfor attempt in brute_force_pattern(points):  \n    print(\"Trying pattern:\", \"\".join(attempt))",
+        "detail": "phone_pattern",
+        "documentation": {}
+    },
+    {
+        "label": "points",
+        "kind": 5,
+        "importPath": "phone_pattern",
+        "description": "phone_pattern",
+        "peekOfCode": "points = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  \nfor attempt in brute_force_pattern(points):  \n    print(\"Trying pattern:\", \"\".join(attempt))",
+        "detail": "phone_pattern",
+        "documentation": {}
+    },
+    {
+        "label": "brute_force_pattern",
+        "kind": 2,
+        "importPath": "phone_pattern2",
+        "description": "phone_pattern2",
+        "peekOfCode": "def brute_force_pattern(possible_points, limit):  \n    count = 0\n    for length in range(4, len(possible_points) + 1):  \n        for pattern in itertools.permutations(possible_points, length):  \n            yield pattern  \n            count += 1\n            if count >= limit:\n                return  \npoints = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  \nlimit = 1000 # Set the desired limit",
+        "detail": "phone_pattern2",
+        "documentation": {}
+    },
+    {
+        "label": "points",
+        "kind": 5,
+        "importPath": "phone_pattern2",
+        "description": "phone_pattern2",
+        "peekOfCode": "points = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  \nlimit = 1000 # Set the desired limit\nfor attempt in brute_force_pattern(points, limit):  \n    print(\"Trying pattern:\", \"\".join(attempt))",
+        "detail": "phone_pattern2",
+        "documentation": {}
+    },
+    {
+        "label": "limit",
+        "kind": 5,
+        "importPath": "phone_pattern2",
+        "description": "phone_pattern2",
+        "peekOfCode": "limit = 1000 # Set the desired limit\nfor attempt in brute_force_pattern(points, limit):  \n    print(\"Trying pattern:\", \"\".join(attempt))",
+        "detail": "phone_pattern2",
+        "documentation": {}
+    }
+]

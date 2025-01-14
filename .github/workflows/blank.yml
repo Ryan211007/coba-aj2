@@ -39,3 +39,6 @@ jobs:
       
       - name: Phone Pattern Brute Force
         run: python phone_pattern.py
+
+      - name: Secret Varibale
+        run: echo ${{ secrets.NAMA_LENGKAP }}
